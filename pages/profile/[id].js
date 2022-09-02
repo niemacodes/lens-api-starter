@@ -68,23 +68,23 @@ export default function Profile() {
             </Head>
             <div className="my-12">
                 {profile && (
-                    <div className="flex flex-wrap md:flex-nowrap items-start w-full">
-                        <div className="w-full md:w-auto mb-4 md:mr-8">
-                            {profile.picture && 
-                            profile.picture.original && 
-                            profile.picture.original.url.includes("lens.infura-ipfs.io") ? (
-                                <div className="relative w-60 h-60 bg-emerald-900 rounded mx-auto">
-                                    <Image
-                                        src={profile.picture.original.url}
-                                        layout="fill"
-                                        objectFit="cover"
-                                        alt={profile.handle}
-                                        className="rounded"
-                                    />
-                                </div>
-                            ) : (
-                                <div className="bg-emerald-900 w-60 h-60 rounded mx-auto"></div>
-                            )}
+                <div className="flex flex-wrap md:flex-nowrap items-start w-full">
+                    <div className="w-full md:w-auto mb-4 md:mr-8">
+                    {profile.picture &&
+                    profile.picture.original &&
+                    profile.picture.original.url.includes("lens.infura-ipfs.io") ? (
+                        <div className="relative w-60 h-60 bg-emerald-900 rounded mx-auto">
+                        <Image
+                            src={profile.picture.original.url}
+                            layout="fill"
+                            objectFit="cover"
+                            alt={profile.handle}
+                            className="rounded"
+                        />
+                        </div>
+                    ) : (
+                        <div className="bg-emerald-900 w-60 h-60 rounded mx-auto" />
+                    )}
             </div>
             <div className="grow-1 w-full">
                 <div className="text-center md:text-left">

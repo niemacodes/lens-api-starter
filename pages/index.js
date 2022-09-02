@@ -45,7 +45,7 @@ export default function Home() {
                     className="rounded"/>
                 </div>
               ) : (
-                <div className="bg-emerald-900 w-60 h060 rounded"></div>
+                <div className="bg-emerald-900 w-60 h-60 rounded"></div>
               )}
               <div className="mt-4 text-lg leading-6 font-medium text-center space-y-1">
                 <h3>{profile.name}</h3>
